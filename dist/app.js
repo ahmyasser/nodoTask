@@ -11,10 +11,10 @@ const morgan_1 = tslib_1.__importDefault(require("morgan"));
 const mongoose_1 = require("mongoose");
 const swagger_jsdoc_1 = tslib_1.__importDefault(require("swagger-jsdoc"));
 const swagger_ui_express_1 = tslib_1.__importDefault(require("swagger-ui-express"));
-const _config_1 = require("./config");
-const _databases_1 = require("./databases");
-const error_middleware_1 = tslib_1.__importDefault(require("./middlewares/error.middleware"));
-const logger_1 = require("./utils/logger");
+const _config_1 = require("@config");
+const _databases_1 = require("@databases");
+const error_middleware_1 = tslib_1.__importDefault(require("@middlewares/error.middleware"));
+const logger_1 = require("@utils/logger");
 class App {
     constructor(routes) {
         this.app = (0, express_1.default)();

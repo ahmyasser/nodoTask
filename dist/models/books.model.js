@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const tslib_1 = require("tslib");
 const typegoose_1 = require("@typegoose/typegoose");
-const books_interface_1 = require("../interfaces/books.interface");
+const books_interface_1 = require("@/interfaces/books.interface");
 const mongoose_1 = require("mongoose");
 class Review {
 }

@@ -23,8 +23,8 @@
 /// <reference types="mongoose/types/virtuals" />
 /// <reference types="mongoose" />
 /// <reference types="mongoose/types/inferschematype" />
-import { CreateBookDto, UpdateBookReviewDto } from '../dtos/books.dto';
-import { Book } from '../interfaces/books.interface';
+import { CreateBookDto, UpdateBookReviewDto } from '@dtos/books.dto';
+import { Book } from '@interfaces/books.interface';
 declare class BookService {
     books: import("@typegoose/typegoose").ReturnModelType<{
         new (): {
@@ -36,16 +36,16 @@ declare class BookService {
             isVirtual: boolean;
             edition: string;
             price: number;
-            currency: import("../interfaces/books.interface").Currency;
+            currency: import("@interfaces/books.interface").Currency;
             reviews: {
                 user: import("mongoose").Schema.Types.ObjectId;
                 likes: number;
                 replies: any;
                 content: string;
                 imageURL: string;
-                rating: import("../interfaces/books.interface").Rating;
+                rating: import("@interfaces/books.interface").Rating;
             }[];
-            rating: import("../interfaces/books.interface").Rating;
+            rating: import("@interfaces/books.interface").Rating;
             createdAt?: Date;
             updatedAt?: Date;
         };

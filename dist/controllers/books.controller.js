@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const tslib_1 = require("tslib");
-const books_service_1 = tslib_1.__importDefault(require("../services/books.service"));
+const books_service_1 = tslib_1.__importDefault(require("@services/books.service"));
 class BooksController {
     constructor() {
         this.bookService = new books_service_1.default();

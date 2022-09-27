@@ -1,4 +1,4 @@
-import { Currency, Rating } from '../interfaces/books.interface';
+import { Currency, Rating } from '@/interfaces/books.interface';
 export declare class CreateBookDto {
     type: string;
     authors: string[];

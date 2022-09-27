@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.UpdateBookReviewDto = exports.CreateBookDto = void 0;
 const tslib_1 = require("tslib");
-const books_interface_1 = require("../interfaces/books.interface");
+const books_interface_1 = require("@/interfaces/books.interface");
 const class_validator_1 = require("class-validator");
 class CreateBookDto {
 }

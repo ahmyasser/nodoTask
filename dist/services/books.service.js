@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const tslib_1 = require("tslib");
-const HttpException_1 = require("../exceptions/HttpException");
-const books_model_1 = tslib_1.__importDefault(require("../models/books.model"));
-const util_1 = require("../utils/util");
+const HttpException_1 = require("@exceptions/HttpException");
+const books_model_1 = tslib_1.__importDefault(require("@models/books.model"));
+const util_1 = require("@utils/util");
 class BookService {
     constructor() {
         this.books = books_model_1.default;
