@@ -6,6 +6,7 @@ const _app = _interopRequireDefault(require("./app"));
 const _authRoute = _interopRequireDefault(require("./routes/auth.route"));
 const _indexRoute = _interopRequireDefault(require("./routes/index.route"));
 const _usersRoute = _interopRequireDefault(require("./routes/users.route"));
+const _booksRoute = _interopRequireDefault(require("./routes/books.route"));
 const _validateEnv = _interopRequireDefault(require("./utils/validateEnv"));
 function _interopRequireDefault(obj) {
     return obj && obj.__esModule ? obj : {
@@ -16,11 +17,7 @@ function _interopRequireDefault(obj) {
 const app = new _app.default([
     new _indexRoute.default(),
     new _usersRoute.default(),
-    new _authRoute.default()
-]);
-app.listen();
-
-//# sourceMappingURL=server.js.mapew _booksRoute.default(),
+    new _booksRoute.default(),
     new _authRoute.default()
 ]);
 app.listen();
