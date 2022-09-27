@@ -1,0 +1,25 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "C:\\Users\\wye_hacks\\Desktop\\noodogrodo\\project2\\src\\logs\\debug\\.c0bbff383a51ef40138d9254c9eaeec3ec776770-audit.json",
+    "files": [
+        {
+            "date": 1663952098019,
+            "name": "C:\\Users\\wye_hacks\\Desktop\\noodogrodo\\project2\\src\\logs\\debug\\2022-09-23.log",
+            "hash": "eb414fe619b5ac2208cadc5af5ea3db0cee796768742ef304a6d16acdd42ffb6"
+        },
+        {
+            "date": 1663976875075,
+            "name": "C:\\Users\\wye_hacks\\Desktop\\noodogrodo\\project2\\src\\logs\\debug\\2022-09-24.log",
+            "hash": "e2f29b4c0549c470cdc1718e43e9245b8e55704c979350f01d6a049fa4bfdfe7"
+        },
+        {
+            "date": 1664243063669,
+            "name": "C:\\Users\\wye_hacks\\Desktop\\noodogrodo\\project2\\src\\logs\\debug\\2022-09-27.log",
+            "hash": "70a34fc3f8691661f85cbc2e1cd8dc3e76f7eb217b12d5f788a2074923d654d9"
+        }
+    ],
+    "hashType": "sha256"
+}
