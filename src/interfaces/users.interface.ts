@@ -4,5 +4,5 @@ export interface User {
   _id: string;
   email: string;
   password: string;
-  cart: Book[];
+  cart?: Book[];
 }

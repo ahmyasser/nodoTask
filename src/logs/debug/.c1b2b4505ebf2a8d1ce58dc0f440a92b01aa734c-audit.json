@@ -1,0 +1,20 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "C:\\Users\\wye_hacks\\Desktop\\playground\\nodoTask\\src\\logs\\debug\\.c1b2b4505ebf2a8d1ce58dc0f440a92b01aa734c-audit.json",
+    "files": [
+        {
+            "date": 1664315661448,
+            "name": "C:\\Users\\wye_hacks\\Desktop\\playground\\nodoTask\\src\\logs\\debug\\2022-09-27.log",
+            "hash": "98bf659e151fb7efd36e1266b654e65629746238ff81c7fbc3bad8026e570f5e"
+        },
+        {
+            "date": 1664316233691,
+            "name": "C:\\Users\\wye_hacks\\Desktop\\playground\\nodoTask\\src\\logs\\debug\\2022-09-28.log",
+            "hash": "ee7ebab3ebf715f155324e06daec469c0df2147e18ca0bb2c5ce1c1c84c642bd"
+        }
+    ],
+    "hashType": "sha256"
+}

@@ -1,0 +1,24 @@
+2022-09-28 00:03:54 info: [0mGET /users [32m200[0m 3.959 ms - 377[0m
+2022-09-28 00:03:54 info: [0mGET /users/qpwoeiruty [32m200[0m 1.537 ms - 145[0m
+2022-09-28 00:03:54 info: [0mPOST /users [32m201[0m 91.203 ms - 162[0m
+2022-09-28 00:03:55 info: [0mPUT /users/60706478aad6c9ad19a31c84 [32m200[0m 67.498 ms - 162[0m
+2022-09-28 00:03:55 info: [0mDELETE /users/60706478aad6c9ad19a31c84 [32m200[0m 0.845 ms - 162[0m
+2022-09-28 00:03:57 info: [0mPOST /signup [32m201[0m 106.936 ms - 161[0m
+2022-09-28 00:03:58 info: [0mPOST /login [32m200[0m 66.628 ms - 160[0m
+2022-09-28 00:03:58 error: [POST] /logout >> StatusCode:: 404, Message:: Authentication token missing
+2022-09-28 00:03:58 info: [0mPOST /logout [33m404[0m 14.419 ms - 42[0m
+2022-09-28 00:04:00 info: [0mGET / [32m200[0m 6.243 ms - 2[0m
+2022-09-28 00:04:38 info: [0mGET /users [32m200[0m 4.542 ms - 377[0m
+2022-09-28 00:04:38 info: [0mGET /users/qpwoeiruty [32m200[0m 1.421 ms - 145[0m
+2022-09-28 00:04:38 info: [0mPOST /users [32m201[0m 111.295 ms - 162[0m
+2022-09-28 00:04:39 info: [0mPUT /users/60706478aad6c9ad19a31c84 [32m200[0m 64.447 ms - 162[0m
+2022-09-28 00:04:39 info: [0mDELETE /users/60706478aad6c9ad19a31c84 [32m200[0m 0.928 ms - 162[0m
+2022-09-28 00:04:41 info: [0mPOST /signup [32m201[0m 88.008 ms - 161[0m
+2022-09-28 00:04:42 info: [0mPOST /login [32m200[0m 71.573 ms - 160[0m
+2022-09-28 00:04:42 error: [POST] /logout >> StatusCode:: 404, Message:: Authentication token missing
+2022-09-28 00:04:42 info: [0mPOST /logout [33m404[0m 10.085 ms - 42[0m
+2022-09-28 00:04:44 info: [0mGET / [32m200[0m 8.333 ms - 2[0m
+2022-09-28 00:12:29 info: =================================
+2022-09-28 00:12:29 info: ======= ENV: development =======
+2022-09-28 00:12:29 info: 🚀 App listening on the port 3000
+2022-09-28 00:12:29 info: =================================

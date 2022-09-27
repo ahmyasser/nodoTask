@@ -7,6 +7,6 @@ Object.defineProperty(exports, "dbConnection", {
     get: ()=>dbConnection
 });
 const _config = require("../config");
-const dbConnection = `mongodb://${_config.DB_HOST}:${_config.DB_PORT}/${_config.DB_DATABASE}`;
+const dbConnection = `${_config.DB_HOST}:${_config.DB_PORT}/${_config.DB_DATABASE}`;
 
 //# sourceMappingURL=index.js.map

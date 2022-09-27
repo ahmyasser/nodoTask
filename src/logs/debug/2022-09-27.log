@@ -120,3 +120,54 @@ Use mongoose.model(name, schema)
 2022-09-27 04:21:15 info: 🚀 App listening on the port 3000
 2022-09-27 04:21:15 info: =================================
 2022-09-27 04:21:22 info: [0mPUT /books/review/633256cc7c0d51611a175257 [32m200[0m 95.647 ms - -[0m
+2022-09-27 23:54:24 error: [GET] /users >> StatusCode:: 404, Message:: Authentication token missing
+2022-09-27 23:54:24 info: [0mGET /users [33m404[0m 15.490 ms - 42[0m
+2022-09-27 23:54:24 info: [0mGET /users/qpwoeiruty [32m200[0m 1.525 ms - 145[0m
+2022-09-27 23:54:24 info: [0mPOST /users [32m201[0m 219.417 ms - 162[0m
+2022-09-27 23:54:25 info: [0mPUT /users/60706478aad6c9ad19a31c84 [32m200[0m 90.124 ms - 162[0m
+2022-09-27 23:54:25 info: [0mDELETE /users/60706478aad6c9ad19a31c84 [32m200[0m 0.905 ms - 162[0m
+2022-09-27 23:54:29 info: [0mGET / [32m200[0m 6.453 ms - 2[0m
+2022-09-27 23:55:37 error: [GET] /users >> StatusCode:: 404, Message:: Authentication token missing
+2022-09-27 23:55:37 info: [0mGET /users [33m404[0m 15.103 ms - 42[0m
+2022-09-27 23:55:37 info: [0mGET /users/qpwoeiruty [32m200[0m 1.346 ms - 145[0m
+2022-09-27 23:55:37 info: [0mPOST /users [32m201[0m 78.085 ms - 162[0m
+2022-09-27 23:55:38 info: [0mPUT /users/60706478aad6c9ad19a31c84 [32m200[0m 61.288 ms - 162[0m
+2022-09-27 23:55:38 info: [0mDELETE /users/60706478aad6c9ad19a31c84 [32m200[0m 0.867 ms - 162[0m
+2022-09-27 23:55:40 info: [0mGET / [32m200[0m 3.342 ms - 2[0m
+2022-09-27 23:55:44 info: [0mPOST /signup [32m201[0m 90.792 ms - 161[0m
+2022-09-27 23:55:44 info: [0mPOST /login [32m200[0m 61.091 ms - 160[0m
+2022-09-27 23:55:44 error: [POST] /logout >> StatusCode:: 404, Message:: Authentication token missing
+2022-09-27 23:55:44 info: [0mPOST /logout [33m404[0m 6.382 ms - 42[0m
+2022-09-27 23:56:48 error: [GET] /users >> StatusCode:: 404, Message:: Authentication token missing
+2022-09-27 23:56:48 info: [0mGET /users [33m404[0m 18.547 ms - 42[0m
+2022-09-27 23:56:48 info: [0mGET /users/qpwoeiruty [32m200[0m 1.464 ms - 145[0m
+2022-09-27 23:56:48 info: [0mPOST /users [32m201[0m 88.077 ms - 162[0m
+2022-09-27 23:56:48 info: [0mPUT /users/60706478aad6c9ad19a31c84 [32m200[0m 64.601 ms - 162[0m
+2022-09-27 23:56:48 info: [0mDELETE /users/60706478aad6c9ad19a31c84 [32m200[0m 0.932 ms - 162[0m
+2022-09-27 23:56:50 info: [0mPOST /signup [32m201[0m 82.875 ms - 161[0m
+2022-09-27 23:56:51 info: [0mPOST /login [32m200[0m 65.335 ms - 160[0m
+2022-09-27 23:56:51 error: [POST] /logout >> StatusCode:: 404, Message:: Authentication token missing
+2022-09-27 23:56:51 info: [0mPOST /logout [33m404[0m 6.526 ms - 42[0m
+2022-09-27 23:56:53 info: [0mGET / [32m200[0m 3.973 ms - 2[0m
+2022-09-27 23:57:46 error: [GET] /users >> StatusCode:: 404, Message:: Authentication token missing
+2022-09-27 23:57:46 info: [0mGET /users [33m404[0m 17.391 ms - 42[0m
+2022-09-27 23:57:46 info: [0mGET /users/qpwoeiruty [32m200[0m 1.507 ms - 145[0m
+2022-09-27 23:57:47 info: [0mPOST /users [32m201[0m 123.779 ms - 162[0m
+2022-09-27 23:57:47 info: [0mPUT /users/60706478aad6c9ad19a31c84 [32m200[0m 64.782 ms - 162[0m
+2022-09-27 23:57:47 info: [0mDELETE /users/60706478aad6c9ad19a31c84 [32m200[0m 0.943 ms - 162[0m
+2022-09-27 23:57:49 info: [0mPOST /signup [32m201[0m 88.753 ms - 161[0m
+2022-09-27 23:57:49 info: [0mPOST /login [32m200[0m 71.728 ms - 160[0m
+2022-09-27 23:57:49 error: [POST] /logout >> StatusCode:: 404, Message:: Authentication token missing
+2022-09-27 23:57:49 info: [0mPOST /logout [33m404[0m 6.425 ms - 42[0m
+2022-09-27 23:57:52 info: [0mGET / [32m200[0m 6.070 ms - 2[0m
+2022-09-27 23:59:48 error: [GET] /users >> StatusCode:: 404, Message:: Authentication token missing
+2022-09-27 23:59:48 info: [0mGET /users [33m404[0m 15.909 ms - 42[0m
+2022-09-27 23:59:49 info: [0mGET /users/qpwoeiruty [32m200[0m 1.850 ms - 145[0m
+2022-09-27 23:59:49 info: [0mPOST /users [32m201[0m 76.085 ms - 162[0m
+2022-09-27 23:59:49 info: [0mPUT /users/60706478aad6c9ad19a31c84 [32m200[0m 57.792 ms - 162[0m
+2022-09-27 23:59:49 info: [0mDELETE /users/60706478aad6c9ad19a31c84 [32m200[0m 0.822 ms - 162[0m
+2022-09-27 23:59:53 info: [0mPOST /signup [32m201[0m 81.538 ms - 161[0m
+2022-09-27 23:59:53 info: [0mPOST /login [32m200[0m 68.989 ms - 160[0m
+2022-09-27 23:59:53 error: [POST] /logout >> StatusCode:: 404, Message:: Authentication token missing
+2022-09-27 23:59:53 info: [0mPOST /logout [33m404[0m 7.544 ms - 42[0m
+2022-09-27 23:59:55 info: [0mGET / [32m200[0m 3.871 ms - 2[0m
