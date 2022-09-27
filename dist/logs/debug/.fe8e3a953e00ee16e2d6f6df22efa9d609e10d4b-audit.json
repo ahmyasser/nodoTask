@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "C:\\Users\\wye_hacks\\Desktop\\playground\\nodoTask\\dist\\logs\\debug\\.fe8e3a953e00ee16e2d6f6df22efa9d609e10d4b-audit.json",
+    "files": [
+        {
+            "date": 1664319173558,
+            "name": "C:\\Users\\wye_hacks\\Desktop\\playground\\nodoTask\\dist\\logs\\debug\\2022-09-28.log",
+            "hash": "aad6ef3e6de159f333cba8cec2ecb100fa0e586bed00532a02ed0c2f33122276"
+        }
+    ],
+    "hashType": "sha256"
+}
