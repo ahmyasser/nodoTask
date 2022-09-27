@@ -57,6 +57,23 @@ describe('Testing Auth', ()=>{
             return (0, _supertest.default)(app.getServer()).post(`${authRoute.path}login`).send(userData).expect('Set-Cookie', /^Authorization=.+/);
         });
     });
+    describe('[POST] /logout', ()=>{
+        it('logout Set-Cookie Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ; Max-age=0', async ()=>{
+            const userData = {
+                _id: '60706478aad6c9ad19a31c84',
+                email: 'test@email.com',
+                password: await _bcrypt.default.hash('q1w2e3r4!', 10)
+            };
+            const authRoute = new _authRoute.default();
+            const users = authRoute.authController.authService.users;
+            users.findOne = jest.fn().mockReturnValue(userData);
+            _mongoose.default.connect = jest.fn();
+            const app = new _app.default([
+                authRoute
+            ]);
+            return (0, _supertest.default)(app.getServer()).post(`${authRoute.path}logout`).send(userData).set('Set-Cookie', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ');
+        });
+    });
 });
 
 //# sourceMappingURL=auth.test.js.map

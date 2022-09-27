@@ -7,6 +7,7 @@ Object.defineProperty(exports, "default", {
     get: ()=>_default
 });
 const _typegoose = require("@typegoose/typegoose");
+const _mongoose = require("mongoose");
 var __decorate = (void 0) && (void 0).__decorate || function(decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -33,6 +34,13 @@ __decorate([
     }),
     __metadata("design:type", String)
 ], User.prototype, "password", void 0);
+__decorate([
+    (0, _typegoose.prop)({
+        type: _mongoose.Schema.Types.ObjectId,
+        ref: 'books'
+    }),
+    __metadata("design:type", Array)
+], User.prototype, "cart", void 0);
 User = __decorate([
     (0, _typegoose.modelOptions)({
         schemaOptions: {

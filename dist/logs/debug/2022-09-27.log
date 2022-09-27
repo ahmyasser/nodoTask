@@ -1,0 +1,173 @@
+2022-09-27 03:44:26 info: =================================
+2022-09-27 03:44:26 info: ======= ENV: development =======
+2022-09-27 03:44:26 info: 🚀 App listening on the port 3000
+2022-09-27 03:44:26 info: =================================
+2022-09-27 03:44:56 info: [0mPOST /login [32m200[0m 162.997 ms - 264[0m
+2022-09-27 03:47:11 error: [POST] /books >> StatusCode:: 400, Message:: type must be a string, authors must be a string, publisher must be a string, numberOfCopies must be a number conforming to the specified constraints, isVirtual must be a boolean value, edition must be a string, price must be a number conforming to the specified constraints, currency must be a valid enum value
+2022-09-27 03:47:11 info: [0mPOST /books [33m400[0m 5.988 ms - 324[0m
+2022-09-27 03:49:40 error: [POST] /books >> StatusCode:: 400, Message:: edition must be a string
+2022-09-27 03:49:40 info: [0mPOST /books [33m400[0m 2.523 ms - 38[0m
+2022-09-27 03:50:04 info: [0mPOST /books [32m201[0m 15.058 ms - 297[0m
+2022-09-27 03:56:14 info: =================================
+2022-09-27 03:56:14 info: ======= ENV: development =======
+2022-09-27 03:56:14 info: 🚀 App listening on the port 3000
+2022-09-27 03:56:14 info: =================================
+2022-09-27 03:56:27 info: =================================
+2022-09-27 03:56:27 info: ======= ENV: development =======
+2022-09-27 03:56:27 info: 🚀 App listening on the port 3000
+2022-09-27 03:56:27 info: =================================
+2022-09-27 03:57:23 info: =================================
+2022-09-27 03:57:23 info: ======= ENV: development =======
+2022-09-27 03:57:23 info: 🚀 App listening on the port 3000
+2022-09-27 03:57:23 info: =================================
+2022-09-27 03:57:58 info: [0mPOST /books/reviews/633256cc7c0d51611a175257 [33m404[0m 17.120 ms - 178[0m
+2022-09-27 03:58:09 info: [0mPUT /books/reviews/633256cc7c0d51611a175257 [33m404[0m 1.136 ms - 177[0m
+2022-09-27 03:58:34 error: [PUT] /books/review/633256cc7c0d51611a175257 >> StatusCode:: 400, Message:: property type should not exist, property authors should not exist, property publisher should not exist, property numberOfCopies should not exist, property isVirtual should not exist, property price should not exist, property currency should not exist, property edition should not exist
+2022-09-27 03:58:34 info: [0mPUT /books/review/633256cc7c0d51611a175257 [33m400[0m 8.994 ms - 299[0m
+2022-09-27 04:00:34 error: [PUT] /books/review/633256cc7c0d51611a175257 >> StatusCode:: 404, Message:: Authentication token missing
+2022-09-27 04:00:34 info: [0mPUT /books/review/633256cc7c0d51611a175257 [33m404[0m 2.828 ms - 42[0m
+2022-09-27 04:02:19 info: [0mPUT /books/review/633256cc7c0d51611a175257 [32m200[0m 31.988 ms - 297[0m
+2022-09-27 04:07:38 info: =================================
+2022-09-27 04:07:38 info: ======= ENV: development =======
+2022-09-27 04:07:38 info: 🚀 App listening on the port 3000
+2022-09-27 04:07:38 info: =================================
+2022-09-27 04:07:45 info: [0mPUT /books/review/633256cc7c0d51611a175257 [32m200[0m 49.073 ms - 297[0m
+2022-09-27 04:08:13 info: =================================
+2022-09-27 04:08:13 info: ======= ENV: development =======
+2022-09-27 04:08:13 info: 🚀 App listening on the port 3000
+2022-09-27 04:08:13 info: =================================
+2022-09-27 04:08:17 info: [0mPUT /books/review/633256cc7c0d51611a175257 [32m200[0m 47.142 ms - 297[0m
+2022-09-27 04:08:48 info: =================================
+2022-09-27 04:08:48 info: ======= ENV: development =======
+2022-09-27 04:08:48 info: 🚀 App listening on the port 3000
+2022-09-27 04:08:48 info: =================================
+2022-09-27 04:08:51 info: [0mPUT /books/review/633256cc7c0d51611a175257 [32m200[0m 46.365 ms - 418[0m
+2022-09-27 04:11:33 info: =================================
+2022-09-27 04:11:33 info: ======= ENV: development =======
+2022-09-27 04:11:33 info: 🚀 App listening on the port 3000
+2022-09-27 04:11:33 info: =================================
+2022-09-27 04:11:34 error: [PUT] /books/review/633256cc7c0d51611a175257 >> StatusCode:: 500, Message:: Schema hasn't been registered for model "users".
+Use mongoose.model(name, schema)
+2022-09-27 04:11:34 info: [0mPUT /books/review/633256cc7c0d51611a175257 [31m500[0m 62.990 ms - 98[0m
+2022-09-27 04:13:07 info: =================================
+2022-09-27 04:13:07 info: ======= ENV: development =======
+2022-09-27 04:13:07 info: 🚀 App listening on the port 3000
+2022-09-27 04:13:07 info: =================================
+2022-09-27 04:13:09 error: [PUT] /books/review/633256cc7c0d51611a175257 >> StatusCode:: 500, Message:: Schema hasn't been registered for model "users".
+Use mongoose.model(name, schema)
+2022-09-27 04:13:09 info: [0mPUT /books/review/633256cc7c0d51611a175257 [31m500[0m 55.128 ms - 98[0m
+2022-09-27 04:13:10 error: [PUT] /books/review/633256cc7c0d51611a175257 >> StatusCode:: 500, Message:: Schema hasn't been registered for model "users".
+Use mongoose.model(name, schema)
+2022-09-27 04:13:10 info: [0mPUT /books/review/633256cc7c0d51611a175257 [31m500[0m 17.073 ms - 98[0m
+2022-09-27 04:13:14 error: [PUT] /books/review/633256cc7c0d51611a175257 >> StatusCode:: 500, Message:: Schema hasn't been registered for model "users".
+Use mongoose.model(name, schema)
+2022-09-27 04:13:14 info: [0mPUT /books/review/633256cc7c0d51611a175257 [31m500[0m 10.678 ms - 98[0m
+2022-09-27 04:13:36 info: =================================
+2022-09-27 04:13:36 info: ======= ENV: development =======
+2022-09-27 04:13:36 info: 🚀 App listening on the port 3000
+2022-09-27 04:13:36 info: =================================
+2022-09-27 04:13:43 info: =================================
+2022-09-27 04:13:43 info: ======= ENV: development =======
+2022-09-27 04:13:43 info: 🚀 App listening on the port 3000
+2022-09-27 04:13:43 info: =================================
+2022-09-27 04:13:57 error: [PUT] /books/review/633256cc7c0d51611a175257 >> StatusCode:: 500, Message:: Schema hasn't been registered for model "users".
+Use mongoose.model(name, schema)
+2022-09-27 04:13:57 info: [0mPUT /books/review/633256cc7c0d51611a175257 [31m500[0m 59.603 ms - 98[0m
+2022-09-27 04:14:16 info: =================================
+2022-09-27 04:14:16 info: ======= ENV: development =======
+2022-09-27 04:14:16 info: 🚀 App listening on the port 3000
+2022-09-27 04:14:16 info: =================================
+2022-09-27 04:14:16 error: [PUT] /books/review/633256cc7c0d51611a175257 >> StatusCode:: 500, Message:: Schema hasn't been registered for model "users".
+Use mongoose.model(name, schema)
+2022-09-27 04:14:16 info: [0mPUT /books/review/633256cc7c0d51611a175257 [31m500[0m 78.190 ms - 98[0m
+2022-09-27 04:14:20 error: [PUT] /books/review/633256cc7c0d51611a175257 >> StatusCode:: 500, Message:: Schema hasn't been registered for model "users".
+Use mongoose.model(name, schema)
+2022-09-27 04:14:20 info: [0mPUT /books/review/633256cc7c0d51611a175257 [31m500[0m 18.889 ms - 98[0m
+2022-09-27 04:14:31 info: =================================
+2022-09-27 04:14:31 info: ======= ENV: development =======
+2022-09-27 04:14:31 info: 🚀 App listening on the port 3000
+2022-09-27 04:14:31 info: =================================
+2022-09-27 04:14:32 info: [0mPUT /books/review/633256cc7c0d51611a175257 [32m200[0m 49.272 ms - 418[0m
+2022-09-27 04:16:58 info: =================================
+2022-09-27 04:16:58 info: ======= ENV: development =======
+2022-09-27 04:16:58 info: 🚀 App listening on the port 3000
+2022-09-27 04:16:58 info: =================================
+2022-09-27 04:17:02 info: [0mPUT /books/review/633256cc7c0d51611a175257 [32m200[0m 63.501 ms - 418[0m
+2022-09-27 04:17:07 info: [0mPUT /books/review/633256cc7c0d51611a175257 [32m200[0m 16.090 ms - 540[0m
+2022-09-27 04:17:28 info: =================================
+2022-09-27 04:17:28 info: ======= ENV: development =======
+2022-09-27 04:17:28 info: 🚀 App listening on the port 3000
+2022-09-27 04:17:28 info: =================================
+2022-09-27 04:17:55 info: =================================
+2022-09-27 04:17:55 info: ======= ENV: development =======
+2022-09-27 04:17:55 info: 🚀 App listening on the port 3000
+2022-09-27 04:17:55 info: =================================
+2022-09-27 04:17:56 error: [PUT] /books/review/633256cc7c0d51611a175257 >> StatusCode:: 500, Message:: Schema hasn't been registered for model "user".
+Use mongoose.model(name, schema)
+2022-09-27 04:17:56 info: [0mPUT /books/review/633256cc7c0d51611a175257 [31m500[0m 56.767 ms - 97[0m
+2022-09-27 04:18:17 info: =================================
+2022-09-27 04:18:17 info: ======= ENV: development =======
+2022-09-27 04:18:17 info: 🚀 App listening on the port 3000
+2022-09-27 04:18:17 info: =================================
+2022-09-27 04:18:19 error: [PUT] /books/review/633256cc7c0d51611a175257 >> StatusCode:: 500, Message:: Schema hasn't been registered for model "Users".
+Use mongoose.model(name, schema)
+2022-09-27 04:18:19 info: [0mPUT /books/review/633256cc7c0d51611a175257 [31m500[0m 67.743 ms - 98[0m
+2022-09-27 04:18:23 error: [PUT] /books/review/633256cc7c0d51611a175257 >> StatusCode:: 500, Message:: Schema hasn't been registered for model "Users".
+Use mongoose.model(name, schema)
+2022-09-27 04:18:23 info: [0mPUT /books/review/633256cc7c0d51611a175257 [31m500[0m 14.274 ms - 98[0m
+2022-09-27 04:21:15 info: =================================
+2022-09-27 04:21:15 info: ======= ENV: development =======
+2022-09-27 04:21:15 info: 🚀 App listening on the port 3000
+2022-09-27 04:21:15 info: =================================
+2022-09-27 04:21:22 info: [0mPUT /books/review/633256cc7c0d51611a175257 [32m200[0m 95.647 ms - -[0m
+2022-09-27 23:54:24 error: [GET] /users >> StatusCode:: 404, Message:: Authentication token missing
+2022-09-27 23:54:24 info: [0mGET /users [33m404[0m 15.490 ms - 42[0m
+2022-09-27 23:54:24 info: [0mGET /users/qpwoeiruty [32m200[0m 1.525 ms - 145[0m
+2022-09-27 23:54:24 info: [0mPOST /users [32m201[0m 219.417 ms - 162[0m
+2022-09-27 23:54:25 info: [0mPUT /users/60706478aad6c9ad19a31c84 [32m200[0m 90.124 ms - 162[0m
+2022-09-27 23:54:25 info: [0mDELETE /users/60706478aad6c9ad19a31c84 [32m200[0m 0.905 ms - 162[0m
+2022-09-27 23:54:29 info: [0mGET / [32m200[0m 6.453 ms - 2[0m
+2022-09-27 23:55:37 error: [GET] /users >> StatusCode:: 404, Message:: Authentication token missing
+2022-09-27 23:55:37 info: [0mGET /users [33m404[0m 15.103 ms - 42[0m
+2022-09-27 23:55:37 info: [0mGET /users/qpwoeiruty [32m200[0m 1.346 ms - 145[0m
+2022-09-27 23:55:37 info: [0mPOST /users [32m201[0m 78.085 ms - 162[0m
+2022-09-27 23:55:38 info: [0mPUT /users/60706478aad6c9ad19a31c84 [32m200[0m 61.288 ms - 162[0m
+2022-09-27 23:55:38 info: [0mDELETE /users/60706478aad6c9ad19a31c84 [32m200[0m 0.867 ms - 162[0m
+2022-09-27 23:55:40 info: [0mGET / [32m200[0m 3.342 ms - 2[0m
+2022-09-27 23:55:44 info: [0mPOST /signup [32m201[0m 90.792 ms - 161[0m
+2022-09-27 23:55:44 info: [0mPOST /login [32m200[0m 61.091 ms - 160[0m
+2022-09-27 23:55:44 error: [POST] /logout >> StatusCode:: 404, Message:: Authentication token missing
+2022-09-27 23:55:44 info: [0mPOST /logout [33m404[0m 6.382 ms - 42[0m
+2022-09-27 23:56:48 error: [GET] /users >> StatusCode:: 404, Message:: Authentication token missing
+2022-09-27 23:56:48 info: [0mGET /users [33m404[0m 18.547 ms - 42[0m
+2022-09-27 23:56:48 info: [0mGET /users/qpwoeiruty [32m200[0m 1.464 ms - 145[0m
+2022-09-27 23:56:48 info: [0mPOST /users [32m201[0m 88.077 ms - 162[0m
+2022-09-27 23:56:48 info: [0mPUT /users/60706478aad6c9ad19a31c84 [32m200[0m 64.601 ms - 162[0m
+2022-09-27 23:56:48 info: [0mDELETE /users/60706478aad6c9ad19a31c84 [32m200[0m 0.932 ms - 162[0m
+2022-09-27 23:56:50 info: [0mPOST /signup [32m201[0m 82.875 ms - 161[0m
+2022-09-27 23:56:51 info: [0mPOST /login [32m200[0m 65.335 ms - 160[0m
+2022-09-27 23:56:51 error: [POST] /logout >> StatusCode:: 404, Message:: Authentication token missing
+2022-09-27 23:56:51 info: [0mPOST /logout [33m404[0m 6.526 ms - 42[0m
+2022-09-27 23:56:53 info: [0mGET / [32m200[0m 3.973 ms - 2[0m
+2022-09-27 23:57:46 error: [GET] /users >> StatusCode:: 404, Message:: Authentication token missing
+2022-09-27 23:57:46 info: [0mGET /users [33m404[0m 17.391 ms - 42[0m
+2022-09-27 23:57:46 info: [0mGET /users/qpwoeiruty [32m200[0m 1.507 ms - 145[0m
+2022-09-27 23:57:47 info: [0mPOST /users [32m201[0m 123.779 ms - 162[0m
+2022-09-27 23:57:47 info: [0mPUT /users/60706478aad6c9ad19a31c84 [32m200[0m 64.782 ms - 162[0m
+2022-09-27 23:57:47 info: [0mDELETE /users/60706478aad6c9ad19a31c84 [32m200[0m 0.943 ms - 162[0m
+2022-09-27 23:57:49 info: [0mPOST /signup [32m201[0m 88.753 ms - 161[0m
+2022-09-27 23:57:49 info: [0mPOST /login [32m200[0m 71.728 ms - 160[0m
+2022-09-27 23:57:49 error: [POST] /logout >> StatusCode:: 404, Message:: Authentication token missing
+2022-09-27 23:57:49 info: [0mPOST /logout [33m404[0m 6.425 ms - 42[0m
+2022-09-27 23:57:52 info: [0mGET / [32m200[0m 6.070 ms - 2[0m
+2022-09-27 23:59:48 error: [GET] /users >> StatusCode:: 404, Message:: Authentication token missing
+2022-09-27 23:59:48 info: [0mGET /users [33m404[0m 15.909 ms - 42[0m
+2022-09-27 23:59:49 info: [0mGET /users/qpwoeiruty [32m200[0m 1.850 ms - 145[0m
+2022-09-27 23:59:49 info: [0mPOST /users [32m201[0m 76.085 ms - 162[0m
+2022-09-27 23:59:49 info: [0mPUT /users/60706478aad6c9ad19a31c84 [32m200[0m 57.792 ms - 162[0m
+2022-09-27 23:59:49 info: [0mDELETE /users/60706478aad6c9ad19a31c84 [32m200[0m 0.822 ms - 162[0m
+2022-09-27 23:59:53 info: [0mPOST /signup [32m201[0m 81.538 ms - 161[0m
+2022-09-27 23:59:53 info: [0mPOST /login [32m200[0m 68.989 ms - 160[0m
+2022-09-27 23:59:53 error: [POST] /logout >> StatusCode:: 404, Message:: Authentication token missing
+2022-09-27 23:59:53 info: [0mPOST /logout [33m404[0m 7.544 ms - 42[0m
+2022-09-27 23:59:55 info: [0mGET / [32m200[0m 3.871 ms - 2[0m

@@ -71,7 +71,7 @@ function _objectSpreadProps(target, source) {
 }
 let AuthService = class AuthService {
     async signup(userData) {
-        if ((0, _util.isEmpty)(userData)) throw new _httpException.HttpException(400, "userData is empty");
+        if ((0, _util.isEmpty)(userData)) throw new _httpException.HttpException(400, 'userData is empty');
         const findUser = await _usersModel.default.findOne({
             email: userData.email
         });
@@ -83,13 +83,13 @@ let AuthService = class AuthService {
         return createUserData;
     }
     async login(userData) {
-        if ((0, _util.isEmpty)(userData)) throw new _httpException.HttpException(400, "userData is empty");
+        if ((0, _util.isEmpty)(userData)) throw new _httpException.HttpException(400, 'userData is empty');
         const findUser = await _usersModel.default.findOne({
             email: userData.email
         });
         if (!findUser) throw new _httpException.HttpException(409, `This email ${userData.email} was not found`);
         const isPasswordMatching = await (0, _bcrypt.compare)(userData.password, findUser.password);
-        if (!isPasswordMatching) throw new _httpException.HttpException(409, "Password is not matching");
+        if (!isPasswordMatching) throw new _httpException.HttpException(409, 'Password is not matching');
         const tokenData = this.createToken(findUser);
         const cookie = this.createCookie(tokenData);
         return {
@@ -98,7 +98,7 @@ let AuthService = class AuthService {
         };
     }
     async logout(userData) {
-        if ((0, _util.isEmpty)(userData)) throw new _httpException.HttpException(400, "userData is empty");
+        if ((0, _util.isEmpty)(userData)) throw new _httpException.HttpException(400, 'userData is empty');
         const findUser = await _usersModel.default.findOne({
             email: userData.email,
             password: userData.password
@@ -121,6 +121,9 @@ let AuthService = class AuthService {
     }
     createCookie(tokenData) {
         return `Authorization=${tokenData.token}; HttpOnly; Max-Age=${tokenData.expiresIn};`;
+    }
+    constructor(){
+        this.users = _usersModel.default;
     }
 };
 const _default = AuthService;

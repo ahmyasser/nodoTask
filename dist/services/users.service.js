@@ -73,7 +73,7 @@ let UserService = class UserService {
         return users;
     }
     async findUserById(userId) {
-        if ((0, _util.isEmpty)(userId)) throw new _httpException.HttpException(400, "UserId is empty");
+        if ((0, _util.isEmpty)(userId)) throw new _httpException.HttpException(400, 'UserId is empty');
         const findUser = await _usersModel.default.findOne({
             _id: userId
         });
@@ -81,7 +81,7 @@ let UserService = class UserService {
         return findUser;
     }
     async createUser(userData) {
-        if ((0, _util.isEmpty)(userData)) throw new _httpException.HttpException(400, "userData is empty");
+        if ((0, _util.isEmpty)(userData)) throw new _httpException.HttpException(400, 'userData is empty');
         const findUser = await _usersModel.default.findOne({
             email: userData.email
         });
@@ -93,7 +93,7 @@ let UserService = class UserService {
         return createUserData;
     }
     async updateUser(userId, userData) {
-        if ((0, _util.isEmpty)(userData)) throw new _httpException.HttpException(400, "userData is empty");
+        if ((0, _util.isEmpty)(userData)) throw new _httpException.HttpException(400, 'userData is empty');
         if (userData.email) {
             const findUser = await _usersModel.default.findOne({
                 email: userData.email
@@ -116,6 +116,9 @@ let UserService = class UserService {
         const deleteUserById = await _usersModel.default.findByIdAndDelete(userId);
         if (!deleteUserById) throw new _httpException.HttpException(409, "User doesn't exist");
         return deleteUserById;
+    }
+    constructor(){
+        this.users = _usersModel.default;
     }
 };
 const _default = UserService;

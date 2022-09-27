@@ -1,0 +1,136 @@
+2022-09-24 02:04:51 error: [POST] /logout >> StatusCode:: 404, Message:: Authentication token missing
+2022-09-24 02:05:46 error: [POST] /logout >> StatusCode:: 404, Message:: Authentication token missing
+2022-09-24 02:06:35 error: [POST] /logout >> StatusCode:: 404, Message:: Authentication token missing
+2022-09-24 02:22:09 error: [POST] /logout >> StatusCode:: 404, Message:: Authentication token missing
+2022-09-24 02:24:04 error: uncaughtException: Route.get() requires a callback function but got a [object Promise]
+Error: Route.get() requires a callback function but got a [object Promise]
+    at Route.<computed> [as get] (C:\Users\wye_hacks\Desktop\noodogrodo\project2\node_modules\express\lib\router\route.js:211:15)
+    at Function.proto.<computed> [as get] (C:\Users\wye_hacks\Desktop\noodogrodo\project2\node_modules\express\lib\router\index.js:521:19)
+    at UsersRoute.initializeRoutes (C:\Users\wye_hacks\Desktop\noodogrodo\project2\src\routes\users.route.ts:18:17)
+    at new UsersRoute (C:\Users\wye_hacks\Desktop\noodogrodo\project2\src\routes\users.route.ts:14:10)
+    at Object.<anonymous> (C:\Users\wye_hacks\Desktop\noodogrodo\project2\src\server.ts:9:40)
+    at Module._compile (node:internal/modules/cjs/loader:1126:14)
+    at Module.m._compile (C:\Users\wye_hacks\Desktop\noodogrodo\project2\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1180:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\wye_hacks\Desktop\noodogrodo\project2\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1004:32)
+2022-09-24 02:24:04 error: uncaughtException: next is not a function
+TypeError: next is not a function
+    at authMiddleware (C:\Users\wye_hacks\Desktop\noodogrodo\project2\src\middlewares\auth.middleware.ts:28:5)
+    at UsersRoute.initializeRoutes (C:\Users\wye_hacks\Desktop\noodogrodo\project2\src\routes\users.route.ts:18:51)
+    at new UsersRoute (C:\Users\wye_hacks\Desktop\noodogrodo\project2\src\routes\users.route.ts:14:10)
+    at Object.<anonymous> (C:\Users\wye_hacks\Desktop\noodogrodo\project2\src\server.ts:9:40)
+    at Module._compile (node:internal/modules/cjs/loader:1126:14)
+    at Module.m._compile (C:\Users\wye_hacks\Desktop\noodogrodo\project2\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1180:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\wye_hacks\Desktop\noodogrodo\project2\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1004:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:839:12)
+2022-09-24 02:24:37 error: [GET] /users >> StatusCode:: 404, Message:: Authentication token missing
+2022-09-24 04:16:51 error: [POST] /books >> StatusCode:: 400, Message:: authors must be a string
+2022-09-24 04:17:06 error: [POST] /books >> StatusCode:: 400, Message:: authors must be a string
+2022-09-24 04:17:26 error: [GET] /books >> StatusCode:: 404, Message:: Authentication token missing
+2022-09-24 04:17:38 error: [POST] /users >> StatusCode:: 409, Message:: This email ahmedtricker@gmail.com already exists
+2022-09-24 04:27:54 error: uncaughtException: "Book.rating"'s Type is invalid! Type is: "[object Object]" [E009]
+Error: "Book.rating"'s Type is invalid! Type is: "[object Object]" [E009]
+    at processProp (C:\Users\wye_hacks\Desktop\noodogrodo\project2\node_modules\@typegoose\typegoose\src\internal\processProp.ts:268:11)
+    at _buildSchema (C:\Users\wye_hacks\Desktop\noodogrodo\project2\node_modules\@typegoose\typegoose\src\internal\schema.ts:61:18)
+    at buildSchema (C:\Users\wye_hacks\Desktop\noodogrodo\project2\node_modules\@typegoose\typegoose\src\typegoose.ts:167:21)
+    at getModelForClass (C:\Users\wye_hacks\Desktop\noodogrodo\project2\node_modules\@typegoose\typegoose\src\typegoose.ts:89:58)
+    at Object.<anonymous> (C:\Users\wye_hacks\Desktop\noodogrodo\project2\src\models\books.model.ts:51:35)
+    at Module._compile (node:internal/modules/cjs/loader:1126:14)
+    at Module.m._compile (C:\Users\wye_hacks\Desktop\noodogrodo\project2\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1180:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\wye_hacks\Desktop\noodogrodo\project2\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1004:32)
+2022-09-24 04:28:16 error: uncaughtException: "Book.rating"'s Type is invalid! Type is: "[object Object]" [E009]
+Error: "Book.rating"'s Type is invalid! Type is: "[object Object]" [E009]
+    at processProp (C:\Users\wye_hacks\Desktop\noodogrodo\project2\node_modules\@typegoose\typegoose\src\internal\processProp.ts:268:11)
+    at _buildSchema (C:\Users\wye_hacks\Desktop\noodogrodo\project2\node_modules\@typegoose\typegoose\src\internal\schema.ts:61:18)
+    at buildSchema (C:\Users\wye_hacks\Desktop\noodogrodo\project2\node_modules\@typegoose\typegoose\src\typegoose.ts:167:21)
+    at getModelForClass (C:\Users\wye_hacks\Desktop\noodogrodo\project2\node_modules\@typegoose\typegoose\src\typegoose.ts:89:58)
+    at Object.<anonymous> (C:\Users\wye_hacks\Desktop\noodogrodo\project2\src\models\books.model.ts:51:35)
+    at Module._compile (node:internal/modules/cjs/loader:1126:14)
+    at Module.m._compile (C:\Users\wye_hacks\Desktop\noodogrodo\project2\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1180:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\wye_hacks\Desktop\noodogrodo\project2\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1004:32)
+2022-09-24 04:28:42 error: uncaughtException: "Book.rating"'s Type is invalid! Type is: "[object Object]" [E009]
+Error: "Book.rating"'s Type is invalid! Type is: "[object Object]" [E009]
+    at processProp (C:\Users\wye_hacks\Desktop\noodogrodo\project2\node_modules\@typegoose\typegoose\src\internal\processProp.ts:268:11)
+    at _buildSchema (C:\Users\wye_hacks\Desktop\noodogrodo\project2\node_modules\@typegoose\typegoose\src\internal\schema.ts:61:18)
+    at buildSchema (C:\Users\wye_hacks\Desktop\noodogrodo\project2\node_modules\@typegoose\typegoose\src\typegoose.ts:167:21)
+    at getModelForClass (C:\Users\wye_hacks\Desktop\noodogrodo\project2\node_modules\@typegoose\typegoose\src\typegoose.ts:89:58)
+    at Object.<anonymous> (C:\Users\wye_hacks\Desktop\noodogrodo\project2\src\models\books.model.ts:51:35)
+    at Module._compile (node:internal/modules/cjs/loader:1126:14)
+    at Module.m._compile (C:\Users\wye_hacks\Desktop\noodogrodo\project2\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1180:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\wye_hacks\Desktop\noodogrodo\project2\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1004:32)
+2022-09-24 04:30:01 error: uncaughtException: "Book.rating"'s Type is invalid! Type is: "[object Object]" [E009]
+Error: "Book.rating"'s Type is invalid! Type is: "[object Object]" [E009]
+    at processProp (C:\Users\wye_hacks\Desktop\noodogrodo\project2\node_modules\@typegoose\typegoose\src\internal\processProp.ts:268:11)
+    at _buildSchema (C:\Users\wye_hacks\Desktop\noodogrodo\project2\node_modules\@typegoose\typegoose\src\internal\schema.ts:61:18)
+    at buildSchema (C:\Users\wye_hacks\Desktop\noodogrodo\project2\node_modules\@typegoose\typegoose\src\typegoose.ts:167:21)
+    at getModelForClass (C:\Users\wye_hacks\Desktop\noodogrodo\project2\node_modules\@typegoose\typegoose\src\typegoose.ts:89:58)
+    at Object.<anonymous> (C:\Users\wye_hacks\Desktop\noodogrodo\project2\src\models\books.model.ts:51:35)
+    at Module._compile (node:internal/modules/cjs/loader:1126:14)
+    at Module.m._compile (C:\Users\wye_hacks\Desktop\noodogrodo\project2\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1180:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\wye_hacks\Desktop\noodogrodo\project2\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1004:32)
+2022-09-24 04:31:53 error: uncaughtException: "Book.rating"'s Type is invalid! Type is: "[object Object]" [E009]
+Error: "Book.rating"'s Type is invalid! Type is: "[object Object]" [E009]
+    at processProp (C:\Users\wye_hacks\Desktop\noodogrodo\project2\node_modules\@typegoose\typegoose\src\internal\processProp.ts:268:11)
+    at _buildSchema (C:\Users\wye_hacks\Desktop\noodogrodo\project2\node_modules\@typegoose\typegoose\src\internal\schema.ts:61:18)
+    at buildSchema (C:\Users\wye_hacks\Desktop\noodogrodo\project2\node_modules\@typegoose\typegoose\src\typegoose.ts:167:21)
+    at getModelForClass (C:\Users\wye_hacks\Desktop\noodogrodo\project2\node_modules\@typegoose\typegoose\src\typegoose.ts:89:58)
+    at Object.<anonymous> (C:\Users\wye_hacks\Desktop\noodogrodo\project2\src\models\books.model.ts:50:35)
+    at Module._compile (node:internal/modules/cjs/loader:1126:14)
+    at Module.m._compile (C:\Users\wye_hacks\Desktop\noodogrodo\project2\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1180:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\wye_hacks\Desktop\noodogrodo\project2\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1004:32)
+2022-09-24 04:32:11 error: uncaughtException: "Book.rating"'s Type is invalid! Type is: "[object Object]" [E009]
+Error: "Book.rating"'s Type is invalid! Type is: "[object Object]" [E009]
+    at processProp (C:\Users\wye_hacks\Desktop\noodogrodo\project2\node_modules\@typegoose\typegoose\src\internal\processProp.ts:268:11)
+    at _buildSchema (C:\Users\wye_hacks\Desktop\noodogrodo\project2\node_modules\@typegoose\typegoose\src\internal\schema.ts:61:18)
+    at buildSchema (C:\Users\wye_hacks\Desktop\noodogrodo\project2\node_modules\@typegoose\typegoose\src\typegoose.ts:167:21)
+    at getModelForClass (C:\Users\wye_hacks\Desktop\noodogrodo\project2\node_modules\@typegoose\typegoose\src\typegoose.ts:89:58)
+    at Object.<anonymous> (C:\Users\wye_hacks\Desktop\noodogrodo\project2\src\models\books.model.ts:49:35)
+    at Module._compile (node:internal/modules/cjs/loader:1126:14)
+    at Module.m._compile (C:\Users\wye_hacks\Desktop\noodogrodo\project2\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1180:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\wye_hacks\Desktop\noodogrodo\project2\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1004:32)
+2022-09-24 04:33:29 error: [POST] /books >> StatusCode:: 500, Message:: E11000 duplicate key error collection: dev.books index: reviews.user_1 dup key: { reviews.user: null }
+2022-09-24 04:34:05 error: [POST] /books >> StatusCode:: 500, Message:: E11000 duplicate key error collection: dev.books index: reviews.user_1 dup key: { reviews.user: null }
+2022-09-24 04:34:18 error: [POST] /books >> StatusCode:: 500, Message:: E11000 duplicate key error collection: dev.books index: reviews.user_1 dup key: { reviews.user: null }
+2022-09-24 04:34:19 error: [POST] /books >> StatusCode:: 500, Message:: E11000 duplicate key error collection: dev.books index: reviews.user_1 dup key: { reviews.user: null }
+2022-09-24 05:13:56 error: uncaughtException: It seems like the type used is the same as the target class, which is not supported
+Please look at https://github.com/typegoose/typegoose/issues/42 for more information ("Review.replies") [E004]
+TypeError: It seems like the type used is the same as the target class, which is not supported
+Please look at https://github.com/typegoose/typegoose/issues/42 for more information ("Review.replies") [E004]
+    at processProp (C:\Users\wye_hacks\Desktop\noodogrodo\project2\node_modules\@typegoose\typegoose\src\internal\processProp.ts:75:11)
+    at _buildSchema (C:\Users\wye_hacks\Desktop\noodogrodo\project2\node_modules\@typegoose\typegoose\src\internal\schema.ts:61:18)
+    at buildSchema (C:\Users\wye_hacks\Desktop\noodogrodo\project2\node_modules\@typegoose\typegoose\src\typegoose.ts:167:21)
+    at processProp (C:\Users\wye_hacks\Desktop\noodogrodo\project2\node_modules\@typegoose\typegoose\src\internal\processProp.ts:97:16)
+    at _buildSchema (C:\Users\wye_hacks\Desktop\noodogrodo\project2\node_modules\@typegoose\typegoose\src\internal\schema.ts:61:18)
+    at buildSchema (C:\Users\wye_hacks\Desktop\noodogrodo\project2\node_modules\@typegoose\typegoose\src\typegoose.ts:167:21)
+    at getModelForClass (C:\Users\wye_hacks\Desktop\noodogrodo\project2\node_modules\@typegoose\typegoose\src\typegoose.ts:89:58)
+    at Object.<anonymous> (C:\Users\wye_hacks\Desktop\noodogrodo\project2\src\models\books.model.ts:54:35)
+    at Module._compile (node:internal/modules/cjs/loader:1126:14)
+    at Module.m._compile (C:\Users\wye_hacks\Desktop\noodogrodo\project2\node_modules\ts-node\src\index.ts:1618:23)
+2022-09-24 05:14:40 error: uncaughtException: "Review.replies"'s Type is invalid! Type is: "[object Object]" [E009]
+Error: "Review.replies"'s Type is invalid! Type is: "[object Object]" [E009]
+    at processProp (C:\Users\wye_hacks\Desktop\noodogrodo\project2\node_modules\@typegoose\typegoose\src\internal\processProp.ts:268:11)
+    at _buildSchema (C:\Users\wye_hacks\Desktop\noodogrodo\project2\node_modules\@typegoose\typegoose\src\internal\schema.ts:61:18)
+    at buildSchema (C:\Users\wye_hacks\Desktop\noodogrodo\project2\node_modules\@typegoose\typegoose\src\typegoose.ts:167:21)
+    at processProp (C:\Users\wye_hacks\Desktop\noodogrodo\project2\node_modules\@typegoose\typegoose\src\internal\processProp.ts:97:16)
+    at _buildSchema (C:\Users\wye_hacks\Desktop\noodogrodo\project2\node_modules\@typegoose\typegoose\src\internal\schema.ts:61:18)
+    at buildSchema (C:\Users\wye_hacks\Desktop\noodogrodo\project2\node_modules\@typegoose\typegoose\src\typegoose.ts:167:21)
+    at getModelForClass (C:\Users\wye_hacks\Desktop\noodogrodo\project2\node_modules\@typegoose\typegoose\src\typegoose.ts:89:58)
+    at Object.<anonymous> (C:\Users\wye_hacks\Desktop\noodogrodo\project2\src\models\books.model.ts:54:35)
+    at Module._compile (node:internal/modules/cjs/loader:1126:14)
+    at Module.m._compile (C:\Users\wye_hacks\Desktop\noodogrodo\project2\node_modules\ts-node\src\index.ts:1618:23)
+2022-09-24 05:15:37 error: [POST] /books >> StatusCode:: 400, Message:: property review should not exist

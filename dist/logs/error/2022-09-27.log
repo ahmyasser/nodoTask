@@ -1,0 +1,33 @@
+2022-09-27 03:47:11 error: [POST] /books >> StatusCode:: 400, Message:: type must be a string, authors must be a string, publisher must be a string, numberOfCopies must be a number conforming to the specified constraints, isVirtual must be a boolean value, edition must be a string, price must be a number conforming to the specified constraints, currency must be a valid enum value
+2022-09-27 03:49:40 error: [POST] /books >> StatusCode:: 400, Message:: edition must be a string
+2022-09-27 03:58:34 error: [PUT] /books/review/633256cc7c0d51611a175257 >> StatusCode:: 400, Message:: property type should not exist, property authors should not exist, property publisher should not exist, property numberOfCopies should not exist, property isVirtual should not exist, property price should not exist, property currency should not exist, property edition should not exist
+2022-09-27 04:00:34 error: [PUT] /books/review/633256cc7c0d51611a175257 >> StatusCode:: 404, Message:: Authentication token missing
+2022-09-27 04:11:34 error: [PUT] /books/review/633256cc7c0d51611a175257 >> StatusCode:: 500, Message:: Schema hasn't been registered for model "users".
+Use mongoose.model(name, schema)
+2022-09-27 04:13:09 error: [PUT] /books/review/633256cc7c0d51611a175257 >> StatusCode:: 500, Message:: Schema hasn't been registered for model "users".
+Use mongoose.model(name, schema)
+2022-09-27 04:13:10 error: [PUT] /books/review/633256cc7c0d51611a175257 >> StatusCode:: 500, Message:: Schema hasn't been registered for model "users".
+Use mongoose.model(name, schema)
+2022-09-27 04:13:14 error: [PUT] /books/review/633256cc7c0d51611a175257 >> StatusCode:: 500, Message:: Schema hasn't been registered for model "users".
+Use mongoose.model(name, schema)
+2022-09-27 04:13:57 error: [PUT] /books/review/633256cc7c0d51611a175257 >> StatusCode:: 500, Message:: Schema hasn't been registered for model "users".
+Use mongoose.model(name, schema)
+2022-09-27 04:14:16 error: [PUT] /books/review/633256cc7c0d51611a175257 >> StatusCode:: 500, Message:: Schema hasn't been registered for model "users".
+Use mongoose.model(name, schema)
+2022-09-27 04:14:20 error: [PUT] /books/review/633256cc7c0d51611a175257 >> StatusCode:: 500, Message:: Schema hasn't been registered for model "users".
+Use mongoose.model(name, schema)
+2022-09-27 04:17:56 error: [PUT] /books/review/633256cc7c0d51611a175257 >> StatusCode:: 500, Message:: Schema hasn't been registered for model "user".
+Use mongoose.model(name, schema)
+2022-09-27 04:18:19 error: [PUT] /books/review/633256cc7c0d51611a175257 >> StatusCode:: 500, Message:: Schema hasn't been registered for model "Users".
+Use mongoose.model(name, schema)
+2022-09-27 04:18:23 error: [PUT] /books/review/633256cc7c0d51611a175257 >> StatusCode:: 500, Message:: Schema hasn't been registered for model "Users".
+Use mongoose.model(name, schema)
+2022-09-27 23:54:24 error: [GET] /users >> StatusCode:: 404, Message:: Authentication token missing
+2022-09-27 23:55:37 error: [GET] /users >> StatusCode:: 404, Message:: Authentication token missing
+2022-09-27 23:55:44 error: [POST] /logout >> StatusCode:: 404, Message:: Authentication token missing
+2022-09-27 23:56:48 error: [GET] /users >> StatusCode:: 404, Message:: Authentication token missing
+2022-09-27 23:56:51 error: [POST] /logout >> StatusCode:: 404, Message:: Authentication token missing
+2022-09-27 23:57:46 error: [GET] /users >> StatusCode:: 404, Message:: Authentication token missing
+2022-09-27 23:57:49 error: [POST] /logout >> StatusCode:: 404, Message:: Authentication token missing
+2022-09-27 23:59:48 error: [GET] /users >> StatusCode:: 404, Message:: Authentication token missing
+2022-09-27 23:59:53 error: [POST] /logout >> StatusCode:: 404, Message:: Authentication token missing

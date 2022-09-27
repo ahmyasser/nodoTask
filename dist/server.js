@@ -20,4 +20,9 @@ const app = new _app.default([
 ]);
 app.listen();
 
+//# sourceMappingURL=server.js.mapew _booksRoute.default(),
+    new _authRoute.default()
+]);
+app.listen();
+
 //# sourceMappingURL=server.js.map
