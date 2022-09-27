@@ -1,4 +1,4 @@
-import { Currency, Rating } from '@/interfaces/books.interface';
+import { Currency, Rating } from '../interfaces/books.interface';
 import { Schema } from 'mongoose';
 declare class Review {
     user: Schema.Types.ObjectId;

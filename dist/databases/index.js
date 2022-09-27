@@ -1,12 +1,6 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-Object.defineProperty(exports, "dbConnection", {
-    enumerable: true,
-    get: ()=>dbConnection
-});
-const _config = require("../config");
-const dbConnection = `mongodb://${_config.DB_HOST}:${_config.DB_PORT}/${_config.DB_DATABASE}`;
-
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.dbConnection = void 0;
+const _config_1 = require("../config");
+exports.dbConnection = `mongodb://${_config_1.DB_HOST}:${_config_1.DB_PORT}/${_config_1.DB_DATABASE}`;
 //# sourceMappingURL=index.js.map

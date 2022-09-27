@@ -1,131 +1,56 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-Object.defineProperty(exports, "default", {
-    enumerable: true,
-    get: ()=>_default
-});
-const _bcrypt = require("bcrypt");
-const _jsonwebtoken = require("jsonwebtoken");
-const _config = require("../config");
-const _httpException = require("../exceptions/HttpException");
-const _usersModel = _interopRequireDefault(require("../models/users.model"));
-const _util = require("../utils/util");
-function _defineProperty(obj, key, value) {
-    if (key in obj) {
-        Object.defineProperty(obj, key, {
-            value: value,
-            enumerable: true,
-            configurable: true,
-            writable: true
-        });
-    } else {
-        obj[key] = value;
+Object.defineProperty(exports, "__esModule", { value: true });
+const tslib_1 = require("tslib");
+const bcrypt_1 = require("bcrypt");
+const jsonwebtoken_1 = require("jsonwebtoken");
+const _config_1 = require("../config");
+const HttpException_1 = require("../exceptions/HttpException");
+const users_model_1 = tslib_1.__importDefault(require("../models/users.model"));
+const util_1 = require("../utils/util");
+class AuthService {
+    constructor() {
+        this.users = users_model_1.default;
     }
-    return obj;
-}
-function _interopRequireDefault(obj) {
-    return obj && obj.__esModule ? obj : {
-        default: obj
-    };
-}
-function _objectSpread(target) {
-    for(var i = 1; i < arguments.length; i++){
-        var source = arguments[i] != null ? arguments[i] : {};
-        var ownKeys = Object.keys(source);
-        if (typeof Object.getOwnPropertySymbols === 'function') {
-            ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function(sym) {
-                return Object.getOwnPropertyDescriptor(source, sym).enumerable;
-            }));
-        }
-        ownKeys.forEach(function(key) {
-            _defineProperty(target, key, source[key]);
-        });
-    }
-    return target;
-}
-function ownKeys(object, enumerableOnly) {
-    var keys = Object.keys(object);
-    if (Object.getOwnPropertySymbols) {
-        var symbols = Object.getOwnPropertySymbols(object);
-        if (enumerableOnly) {
-            symbols = symbols.filter(function(sym) {
-                return Object.getOwnPropertyDescriptor(object, sym).enumerable;
-            });
-        }
-        keys.push.apply(keys, symbols);
-    }
-    return keys;
-}
-function _objectSpreadProps(target, source) {
-    source = source != null ? source : {};
-    if (Object.getOwnPropertyDescriptors) {
-        Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
-    } else {
-        ownKeys(Object(source)).forEach(function(key) {
-            Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
-        });
-    }
-    return target;
-}
-let AuthService = class AuthService {
     async signup(userData) {
-        if ((0, _util.isEmpty)(userData)) throw new _httpException.HttpException(400, 'userData is empty');
-        const findUser = await _usersModel.default.findOne({
-            email: userData.email
-        });
-        if (findUser) throw new _httpException.HttpException(409, `This email ${userData.email} already exists`);
-        const hashedPassword = await (0, _bcrypt.hash)(userData.password, 10);
-        const createUserData = await _usersModel.default.create(_objectSpreadProps(_objectSpread({}, userData), {
-            password: hashedPassword
-        }));
+        if ((0, util_1.isEmpty)(userData))
+            throw new HttpException_1.HttpException(400, 'userData is empty');
+        const findUser = await users_model_1.default.findOne({ email: userData.email });
+        if (findUser)
+            throw new HttpException_1.HttpException(409, `This email ${userData.email} already exists`);
+        const hashedPassword = await (0, bcrypt_1.hash)(userData.password, 10);
+        const createUserData = await users_model_1.default.create(Object.assign(Object.assign({}, userData), { password: hashedPassword }));
         return createUserData;
     }
     async login(userData) {
-        if ((0, _util.isEmpty)(userData)) throw new _httpException.HttpException(400, 'userData is empty');
-        const findUser = await _usersModel.default.findOne({
-            email: userData.email
-        });
-        if (!findUser) throw new _httpException.HttpException(409, `This email ${userData.email} was not found`);
-        const isPasswordMatching = await (0, _bcrypt.compare)(userData.password, findUser.password);
-        if (!isPasswordMatching) throw new _httpException.HttpException(409, 'Password is not matching');
+        if ((0, util_1.isEmpty)(userData))
+            throw new HttpException_1.HttpException(400, 'userData is empty');
+        const findUser = await users_model_1.default.findOne({ email: userData.email });
+        if (!findUser)
+            throw new HttpException_1.HttpException(409, `This email ${userData.email} was not found`);
+        const isPasswordMatching = await (0, bcrypt_1.compare)(userData.password, findUser.password);
+        if (!isPasswordMatching)
+            throw new HttpException_1.HttpException(409, 'Password is not matching');
         const tokenData = this.createToken(findUser);
         const cookie = this.createCookie(tokenData);
-        return {
-            cookie,
-            findUser
-        };
+        return { cookie, findUser };
     }
     async logout(userData) {
-        if ((0, _util.isEmpty)(userData)) throw new _httpException.HttpException(400, 'userData is empty');
-        const findUser = await _usersModel.default.findOne({
-            email: userData.email,
-            password: userData.password
-        });
-        if (!findUser) throw new _httpException.HttpException(409, `This email ${userData.email} was not found`);
+        if ((0, util_1.isEmpty)(userData))
+            throw new HttpException_1.HttpException(400, 'userData is empty');
+        const findUser = await users_model_1.default.findOne({ email: userData.email, password: userData.password });
+        if (!findUser)
+            throw new HttpException_1.HttpException(409, `This email ${userData.email} was not found`);
         return findUser;
     }
     createToken(user) {
-        const dataStoredInToken = {
-            _id: user._id
-        };
-        const secretKey = _config.SECRET_KEY;
+        const dataStoredInToken = { _id: user._id };
+        const secretKey = _config_1.SECRET_KEY;
         const expiresIn = 60 * 60;
-        return {
-            expiresIn,
-            token: (0, _jsonwebtoken.sign)(dataStoredInToken, secretKey, {
-                expiresIn
-            })
-        };
+        return { expiresIn, token: (0, jsonwebtoken_1.sign)(dataStoredInToken, secretKey, { expiresIn }) };
     }
     createCookie(tokenData) {
         return `Authorization=${tokenData.token}; HttpOnly; Max-Age=${tokenData.expiresIn};`;
     }
-    constructor(){
-        this.users = _usersModel.default;
-    }
-};
-const _default = AuthService;
-
+}
+exports.default = AuthService;
 //# sourceMappingURL=auth.service.js.map

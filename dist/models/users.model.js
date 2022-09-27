@@ -1,55 +1,25 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-Object.defineProperty(exports, "default", {
-    enumerable: true,
-    get: ()=>_default
-});
-const _typegoose = require("@typegoose/typegoose");
-const _mongoose = require("mongoose");
-var __decorate = (void 0) && (void 0).__decorate || function(decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for(var i = decorators.length - 1; i >= 0; i--)if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (void 0) && (void 0).__metadata || function(k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
+Object.defineProperty(exports, "__esModule", { value: true });
+const tslib_1 = require("tslib");
+const typegoose_1 = require("@typegoose/typegoose");
+const mongoose_1 = require("mongoose");
 let User = class User {
 };
-__decorate([
-    (0, _typegoose.prop)({
-        type: String,
-        required: true,
-        unique: true
-    }),
-    __metadata("design:type", String)
+tslib_1.__decorate([
+    (0, typegoose_1.prop)({ type: String, required: true, unique: true }),
+    tslib_1.__metadata("design:type", String)
 ], User.prototype, "email", void 0);
-__decorate([
-    (0, _typegoose.prop)({
-        type: String,
-        required: true
-    }),
-    __metadata("design:type", String)
+tslib_1.__decorate([
+    (0, typegoose_1.prop)({ type: String, required: true }),
+    tslib_1.__metadata("design:type", String)
 ], User.prototype, "password", void 0);
-__decorate([
-    (0, _typegoose.prop)({
-        type: _mongoose.Schema.Types.ObjectId,
-        ref: 'books'
-    }),
-    __metadata("design:type", Array)
+tslib_1.__decorate([
+    (0, typegoose_1.prop)({ type: mongoose_1.Schema.Types.ObjectId, ref: 'books' }),
+    tslib_1.__metadata("design:type", Array)
 ], User.prototype, "cart", void 0);
-User = __decorate([
-    (0, _typegoose.modelOptions)({
-        schemaOptions: {
-            collection: 'users',
-            timestamps: true
-        }
-    })
+User = tslib_1.__decorate([
+    (0, typegoose_1.modelOptions)({ schemaOptions: { collection: 'users', timestamps: true } })
 ], User);
-const UserModel = (0, _typegoose.getModelForClass)(User);
-const _default = UserModel;
-
+const UserModel = (0, typegoose_1.getModelForClass)(User);
+exports.default = UserModel;
 //# sourceMappingURL=users.model.js.map

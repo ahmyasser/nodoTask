@@ -1,37 +1,37 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-Object.defineProperty(exports, "default", {
-    enumerable: true,
-    get: ()=>_default
-});
-const _compression = _interopRequireDefault(require("compression"));
-const _cookieParser = _interopRequireDefault(require("cookie-parser"));
-const _cors = _interopRequireDefault(require("cors"));
-const _express = _interopRequireDefault(require("express"));
-const _helmet = _interopRequireDefault(require("helmet"));
-const _hpp = _interopRequireDefault(require("hpp"));
-const _morgan = _interopRequireDefault(require("morgan"));
-const _mongoose = require("mongoose");
-const _swaggerJsdoc = _interopRequireDefault(require("swagger-jsdoc"));
-const _swaggerUiExpress = _interopRequireDefault(require("swagger-ui-express"));
-const _config = require("./config");
-const _databases = require("./databases");
-const _errorMiddleware = _interopRequireDefault(require("./middlewares/error.middleware"));
-const _logger = require("./utils/logger");
-function _interopRequireDefault(obj) {
-    return obj && obj.__esModule ? obj : {
-        default: obj
-    };
-}
-let App = class App {
+Object.defineProperty(exports, "__esModule", { value: true });
+const tslib_1 = require("tslib");
+const compression_1 = tslib_1.__importDefault(require("compression"));
+const cookie_parser_1 = tslib_1.__importDefault(require("cookie-parser"));
+const cors_1 = tslib_1.__importDefault(require("cors"));
+const express_1 = tslib_1.__importDefault(require("express"));
+const helmet_1 = tslib_1.__importDefault(require("helmet"));
+const hpp_1 = tslib_1.__importDefault(require("hpp"));
+const morgan_1 = tslib_1.__importDefault(require("morgan"));
+const mongoose_1 = require("mongoose");
+const swagger_jsdoc_1 = tslib_1.__importDefault(require("swagger-jsdoc"));
+const swagger_ui_express_1 = tslib_1.__importDefault(require("swagger-ui-express"));
+const _config_1 = require("./config");
+const _databases_1 = require("./databases");
+const error_middleware_1 = tslib_1.__importDefault(require("./middlewares/error.middleware"));
+const logger_1 = require("./utils/logger");
+class App {
+    constructor(routes) {
+        this.app = (0, express_1.default)();
+        this.env = _config_1.NODE_ENV || 'development';
+        this.port = _config_1.PORT || 3000;
+        this.connectToDatabase();
+        this.initializeMiddlewares();
+        this.initializeRoutes(routes);
+        this.initializeSwagger();
+        this.initializeErrorHandling();
+    }
     listen() {
-        this.app.listen(this.port, ()=>{
-            _logger.logger.info(`=================================`);
-            _logger.logger.info(`======= ENV: ${this.env} =======`);
-            _logger.logger.info(`🚀 App listening on the port ${this.port}`);
-            _logger.logger.info(`=================================`);
+        this.app.listen(this.port, () => {
+            logger_1.logger.info(`=================================`);
+            logger_1.logger.info(`======= ENV: ${this.env} =======`);
+            logger_1.logger.info(`🚀 App listening on the port ${this.port}`);
+            logger_1.logger.info(`=================================`);
         });
     }
     getServer() {
@@ -39,29 +39,22 @@ let App = class App {
     }
     connectToDatabase() {
         if (this.env !== 'production') {
-            (0, _mongoose.set)('debug', true);
+            (0, mongoose_1.set)('debug', true);
         }
-        (0, _mongoose.connect)(_databases.dbConnection);
+        (0, mongoose_1.connect)(_databases_1.dbConnection);
     }
     initializeMiddlewares() {
-        this.app.use((0, _morgan.default)(_config.LOG_FORMAT, {
-            stream: _logger.stream
-        }));
-        this.app.use((0, _cors.default)({
-            origin: _config.ORIGIN,
-            credentials: _config.CREDENTIALS
-        }));
-        this.app.use((0, _hpp.default)());
-        this.app.use((0, _helmet.default)());
-        this.app.use((0, _compression.default)());
-        this.app.use(_express.default.json());
-        this.app.use(_express.default.urlencoded({
-            extended: true
-        }));
-        this.app.use((0, _cookieParser.default)());
+        this.app.use((0, morgan_1.default)(_config_1.LOG_FORMAT, { stream: logger_1.stream }));
+        this.app.use((0, cors_1.default)({ origin: _config_1.ORIGIN, credentials: _config_1.CREDENTIALS }));
+        this.app.use((0, hpp_1.default)());
+        this.app.use((0, helmet_1.default)());
+        this.app.use((0, compression_1.default)());
+        this.app.use(express_1.default.json());
+        this.app.use(express_1.default.urlencoded({ extended: true }));
+        this.app.use((0, cookie_parser_1.default)());
     }
     initializeRoutes(routes) {
-        routes.forEach((route)=>{
+        routes.forEach(route => {
             this.app.use('/', route.router);
         });
     }
@@ -71,30 +64,17 @@ let App = class App {
                 info: {
                     title: 'REST API',
                     version: '1.0.0',
-                    description: 'Example docs'
-                }
+                    description: 'Example docs',
+                },
             },
-            apis: [
-                'swagger.yaml'
-            ]
+            apis: ['swagger.yaml'],
         };
-        const specs = (0, _swaggerJsdoc.default)(options);
-        this.app.use('/api-docs', _swaggerUiExpress.default.serve, _swaggerUiExpress.default.setup(specs));
+        const specs = (0, swagger_jsdoc_1.default)(options);
+        this.app.use('/api-docs', swagger_ui_express_1.default.serve, swagger_ui_express_1.default.setup(specs));
     }
     initializeErrorHandling() {
-        this.app.use(_errorMiddleware.default);
+        this.app.use(error_middleware_1.default);
     }
-    constructor(routes){
-        this.app = (0, _express.default)();
-        this.env = _config.NODE_ENV || 'development';
-        this.port = _config.PORT || 3000;
-        this.connectToDatabase();
-        this.initializeMiddlewares();
-        this.initializeRoutes(routes);
-        this.initializeSwagger();
-        this.initializeErrorHandling();
-    }
-};
-const _default = App;
-
+}
+exports.default = App;
 //# sourceMappingURL=app.js.map

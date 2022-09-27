@@ -1,22 +1,16 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-Object.defineProperty(exports, "default", {
-    enumerable: true,
-    get: ()=>_default
-});
-let IndexController = class IndexController {
-    constructor(){
-        this.index = (req, res, next)=>{
+Object.defineProperty(exports, "__esModule", { value: true });
+class IndexController {
+    constructor() {
+        this.index = (req, res, next) => {
             try {
                 res.sendStatus(200);
-            } catch (error) {
+            }
+            catch (error) {
                 next(error);
             }
         };
     }
-};
-const _default = IndexController;
-
+}
+exports.default = IndexController;
 //# sourceMappingURL=index.controller.js.map
